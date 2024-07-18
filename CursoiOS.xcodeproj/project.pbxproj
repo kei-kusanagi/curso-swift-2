@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B354D912C488D4F0092A865 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B354D902C488D4F0092A865 /* ListExample.swift */; };
 		0B8AD5A92C475B9700D9FB15 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AD5A82C475B9700D9FB15 /* IMCResult.swift */; };
 		0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B32C45F5390072C762 /* LabelExample.swift */; };
 		0B8BC1B62C45F7AA0072C762 /* ButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B354D902C488D4F0092A865 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
 		0B8AD5A82C475B9700D9FB15 /* IMCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResult.swift; sourceTree = "<group>"; };
 		0B8BC1B32C45F5390072C762 /* LabelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExample.swift; sourceTree = "<group>"; };
 		0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExample.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				0B8BC1B32C45F5390072C762 /* LabelExample.swift */,
 				0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */,
 				0B8BC1B72C45FB740072C762 /* TextFieldExample.swift */,
+				0B354D902C488D4F0092A865 /* ListExample.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				0B8BC1B62C45F7AA0072C762 /* ButtonExample.swift in Sources */,
 				0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */,
 				0BAD498F2C45A9E400B5B1B6 /* TextExample.swift in Sources */,
+				0B354D912C488D4F0092A865 /* ListExample.swift in Sources */,
 				0B8AD5A92C475B9700D9FB15 /* IMCResult.swift in Sources */,
 				0BAA9BA82C46FE3C004E71F3 /* MenuView.swift in Sources */,
 				0BA9D8BC2C41FB0300061259 /* MainView.swift in Sources */,
