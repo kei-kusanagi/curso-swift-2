@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B354D912C488D4F0092A865 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B354D902C488D4F0092A865 /* ListExample.swift */; };
+		0B354D942C48A27F0092A865 /* SuperheroSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B354D932C48A27F0092A865 /* SuperheroSearcher.swift */; };
 		0B8AD5A92C475B9700D9FB15 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AD5A82C475B9700D9FB15 /* IMCResult.swift */; };
 		0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B32C45F5390072C762 /* LabelExample.swift */; };
 		0B8BC1B62C45F7AA0072C762 /* ButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */; };
@@ -19,6 +20,9 @@
 		0B92BB282C40A58E007E7FE3 /* CursoiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB272C40A58E007E7FE3 /* CursoiOSTests.swift */; };
 		0B92BB322C40A58E007E7FE3 /* CursoiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB312C40A58E007E7FE3 /* CursoiOSUITests.swift */; };
 		0B92BB342C40A58E007E7FE3 /* CursoiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB332C40A58E007E7FE3 /* CursoiOSUITestsLaunchTests.swift */; };
+		0B92ECD32C49FB4100CF7304 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B92ECD22C49FB4100CF7304 /* SDWebImageSwiftUI */; };
+		0B92ECD52C49FDE600CF7304 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B92ECD42C49FDE600CF7304 /* SDWebImageSwiftUI */; };
+		0B9E60702C49929E003A652D /* ApiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E606F2C49929E003A652D /* ApiNetwork.swift */; };
 		0BA9D8BC2C41FB0300061259 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA9D8B92C41FAB700061259 /* MainView.swift */; };
 		0BAA9BA82C46FE3C004E71F3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA9BA72C46FE3C004E71F3 /* MenuView.swift */; };
 		0BAA9BAB2C470596004E71F3 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA9BAA2C470596004E71F3 /* IMCView.swift */; };
@@ -45,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		0B354D902C488D4F0092A865 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
+		0B354D932C48A27F0092A865 /* SuperheroSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroSearcher.swift; sourceTree = "<group>"; };
 		0B8AD5A82C475B9700D9FB15 /* IMCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResult.swift; sourceTree = "<group>"; };
 		0B8BC1B32C45F5390072C762 /* LabelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExample.swift; sourceTree = "<group>"; };
 		0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExample.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 		0B92BB2D2C40A58E007E7FE3 /* CursoiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CursoiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B92BB312C40A58E007E7FE3 /* CursoiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoiOSUITests.swift; sourceTree = "<group>"; };
 		0B92BB332C40A58E007E7FE3 /* CursoiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B9E606F2C49929E003A652D /* ApiNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetwork.swift; sourceTree = "<group>"; };
 		0BA9D8B92C41FAB700061259 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0BAA9BA72C46FE3C004E71F3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0BAA9BAA2C470596004E71F3 /* IMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B92ECD32C49FB4100CF7304 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B92ECD52C49FDE600CF7304 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B354D922C48A2650092A865 /* SuperHero */ = {
+			isa = PBXGroup;
+			children = (
+				0B354D932C48A27F0092A865 /* SuperheroSearcher.swift */,
+				0B9E606F2C49929E003A652D /* ApiNetwork.swift */,
+			);
+			path = SuperHero;
+			sourceTree = "<group>";
+		};
 		0B92BB0A2C40A58C007E7FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +131,7 @@
 		0B92BB152C40A58C007E7FE3 /* CursoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				0B354D922C48A2650092A865 /* SuperHero */,
 				0BAA9BA92C470579004E71F3 /* IMC */,
 				0BA9D8BD2C41FB6E00061259 /* Components */,
 				0BA9D8B82C41FA5700061259 /* Exercises */,
@@ -197,6 +215,9 @@
 			dependencies = (
 			);
 			name = CursoiOS;
+			packageProductDependencies = (
+				0B92ECD22C49FB4100CF7304 /* SDWebImageSwiftUI */,
+			);
 			productName = CursoiOS;
 			productReference = 0B92BB132C40A58C007E7FE3 /* CursoiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +236,9 @@
 				0B92BB252C40A58E007E7FE3 /* PBXTargetDependency */,
 			);
 			name = CursoiOSTests;
+			packageProductDependencies = (
+				0B92ECD42C49FDE600CF7304 /* SDWebImageSwiftUI */,
+			);
 			productName = CursoiOSTests;
 			productReference = 0B92BB232C40A58E007E7FE3 /* CursoiOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -269,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 0B92BB0A2C40A58C007E7FE3;
+			packageReferences = (
+				0B92ECD12C49FABF00CF7304 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0B92BB142C40A58C007E7FE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -315,6 +342,7 @@
 				0B8BC1B62C45F7AA0072C762 /* ButtonExample.swift in Sources */,
 				0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */,
 				0BAD498F2C45A9E400B5B1B6 /* TextExample.swift in Sources */,
+				0B354D942C48A27F0092A865 /* SuperheroSearcher.swift in Sources */,
 				0B354D912C488D4F0092A865 /* ListExample.swift in Sources */,
 				0B8AD5A92C475B9700D9FB15 /* IMCResult.swift in Sources */,
 				0BAA9BA82C46FE3C004E71F3 /* MenuView.swift in Sources */,
@@ -323,6 +351,7 @@
 				0B8BC1B82C45FB740072C762 /* TextFieldExample.swift in Sources */,
 				0BAA9BAB2C470596004E71F3 /* IMCView.swift in Sources */,
 				0B92BB172C40A58C007E7FE3 /* CursoiOSApp.swift in Sources */,
+				0B9E60702C49929E003A652D /* ApiNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +675,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B92ECD12C49FABF00CF7304 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B92ECD22C49FB4100CF7304 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B92ECD12C49FABF00CF7304 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		0B92ECD42C49FDE600CF7304 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B92ECD12C49FABF00CF7304 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B92BB0B2C40A58C007E7FE3 /* Project object */;
 }
