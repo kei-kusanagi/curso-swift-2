@@ -23,11 +23,14 @@
 		0B92ECD32C49FB4100CF7304 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B92ECD22C49FB4100CF7304 /* SDWebImageSwiftUI */; };
 		0B92ECD52C49FDE600CF7304 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B92ECD42C49FDE600CF7304 /* SDWebImageSwiftUI */; };
 		0B9E60702C49929E003A652D /* ApiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E606F2C49929E003A652D /* ApiNetwork.swift */; };
+		0BA5A20E2C4AF9BD00E5218B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5A20D2C4AF9BD00E5218B /* SDWebImageSwiftUI */; };
+		0BA5A2102C4B01F400E5218B /* SuperheroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5A20F2C4B01F400E5218B /* SuperheroDetail.swift */; };
 		0BA9D8BC2C41FB0300061259 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA9D8B92C41FAB700061259 /* MainView.swift */; };
 		0BAA9BA82C46FE3C004E71F3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA9BA72C46FE3C004E71F3 /* MenuView.swift */; };
 		0BAA9BAB2C470596004E71F3 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA9BAA2C470596004E71F3 /* IMCView.swift */; };
 		0BAD498F2C45A9E400B5B1B6 /* TextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAD498E2C45A9E400B5B1B6 /* TextExample.swift */; };
 		0BAD49912C45ABA100B5B1B6 /* ImageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAD49902C45ABA100B5B1B6 /* ImageExample.swift */; };
+		0BAF8D262C4ED55C002B97CC /* MapExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF8D252C4ED55C002B97CC /* MapExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +68,13 @@
 		0B92BB312C40A58E007E7FE3 /* CursoiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoiOSUITests.swift; sourceTree = "<group>"; };
 		0B92BB332C40A58E007E7FE3 /* CursoiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0B9E606F2C49929E003A652D /* ApiNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetwork.swift; sourceTree = "<group>"; };
+		0BA5A20F2C4B01F400E5218B /* SuperheroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroDetail.swift; sourceTree = "<group>"; };
 		0BA9D8B92C41FAB700061259 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0BAA9BA72C46FE3C004E71F3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0BAA9BAA2C470596004E71F3 /* IMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCView.swift; sourceTree = "<group>"; };
 		0BAD498E2C45A9E400B5B1B6 /* TextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExample.swift; sourceTree = "<group>"; };
 		0BAD49902C45ABA100B5B1B6 /* ImageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExample.swift; sourceTree = "<group>"; };
+		0BAF8D252C4ED55C002B97CC /* MapExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA5A20E2C4AF9BD00E5218B /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +110,7 @@
 			children = (
 				0B354D932C48A27F0092A865 /* SuperheroSearcher.swift */,
 				0B9E606F2C49929E003A652D /* ApiNetwork.swift */,
+				0BA5A20F2C4B01F400E5218B /* SuperheroDetail.swift */,
 			);
 			path = SuperHero;
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 				0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */,
 				0B8BC1B72C45FB740072C762 /* TextFieldExample.swift */,
 				0B354D902C488D4F0092A865 /* ListExample.swift */,
+				0BAF8D252C4ED55C002B97CC /* MapExample.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -257,6 +265,9 @@
 				0B92BB2F2C40A58E007E7FE3 /* PBXTargetDependency */,
 			);
 			name = CursoiOSUITests;
+			packageProductDependencies = (
+				0BA5A20D2C4AF9BD00E5218B /* SDWebImageSwiftUI */,
+			);
 			productName = CursoiOSUITests;
 			productReference = 0B92BB2D2C40A58E007E7FE3 /* CursoiOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -343,12 +354,14 @@
 				0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */,
 				0BAD498F2C45A9E400B5B1B6 /* TextExample.swift in Sources */,
 				0B354D942C48A27F0092A865 /* SuperheroSearcher.swift in Sources */,
+				0BAF8D262C4ED55C002B97CC /* MapExample.swift in Sources */,
 				0B354D912C488D4F0092A865 /* ListExample.swift in Sources */,
 				0B8AD5A92C475B9700D9FB15 /* IMCResult.swift in Sources */,
 				0BAA9BA82C46FE3C004E71F3 /* MenuView.swift in Sources */,
 				0BA9D8BC2C41FB0300061259 /* MainView.swift in Sources */,
 				0BAD49912C45ABA100B5B1B6 /* ImageExample.swift in Sources */,
 				0B8BC1B82C45FB740072C762 /* TextFieldExample.swift in Sources */,
+				0BA5A2102C4B01F400E5218B /* SuperheroDetail.swift in Sources */,
 				0BAA9BAB2C470596004E71F3 /* IMCView.swift in Sources */,
 				0B92BB172C40A58C007E7FE3 /* CursoiOSApp.swift in Sources */,
 				0B9E60702C49929E003A652D /* ApiNetwork.swift in Sources */,
@@ -694,6 +707,11 @@
 			productName = SDWebImageSwiftUI;
 		};
 		0B92ECD42C49FDE600CF7304 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B92ECD12C49FABF00CF7304 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		0BA5A20D2C4AF9BD00E5218B /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B92ECD12C49FABF00CF7304 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;

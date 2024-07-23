@@ -12,6 +12,7 @@ import SDWebImageSwiftUI
 struct SuperheroSearcher: View {
     @State var superheroName: String = ""
     @State var wrapper:ApiNetwork.Wrapper? = nil
+    @State var loading:Bool = false
     var body: some View {
         VStack{
             TextField("", text: $superheroName, prompt: Text("Superman...").font(.title2).bold().foregroundColor(.gray))
@@ -23,6 +24,7 @@ struct SuperheroSearcher: View {
             .padding(8)
             .autocorrectionDisabled()
             .onSubmit {
+                loading = true
                 print(superheroName)
                 Task{
                     do{
@@ -30,11 +32,26 @@ struct SuperheroSearcher: View {
                        }catch{
                         print("Error")
                     }
+                    loading = false
                 }
-               
+                
             }
-            List(wrapper?.results ?? []){superhero in SuperheroItem(superhero: superhero)
-            }.listStyle(.plain)
+            
+            if loading {
+                ProgressView().tint(.white)
+            }
+            NavigationStack{
+                List(wrapper?.results ?? []){superhero in
+                    ZStack{
+                        SuperheroItem(superhero: superhero)
+                        NavigationLink(destination: {
+                            SuperheroDetail(id: superhero.id)
+                        }){EmptyView()}.opacity(0)
+                    }.listRowBackground(Color.backgroundApp)
+                    
+
+                    }.listStyle(.plain)
+            }
             Spacer()
         }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             .background(.backgroundApp)
@@ -64,7 +81,7 @@ struct SuperheroItem:View {
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                     .background(.white.opacity(0.5))
             }
-        }.frame(height: 200).cornerRadius(32).listRowBackground(Color.backgroundApp)
+        }.frame(height: 200).cornerRadius(32)
         
     }
 }
