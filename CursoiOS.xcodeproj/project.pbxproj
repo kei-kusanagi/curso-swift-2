@@ -13,6 +13,9 @@
 		0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B32C45F5390072C762 /* LabelExample.swift */; };
 		0B8BC1B62C45F7AA0072C762 /* ButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */; };
 		0B8BC1B82C45FB740072C762 /* TextFieldExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BC1B72C45FB740072C762 /* TextFieldExample.swift */; };
+		0B91B1292C50671A00786CE0 /* FavPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91B1282C50671A00786CE0 /* FavPlaces.swift */; };
+		0B91B12C2C507A8100786CE0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91B12B2C507A8100786CE0 /* Place.swift */; };
+		0B91B12E2C507F3E00786CE0 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91B12D2C507F3E00786CE0 /* CustomDialog.swift */; };
 		0B92BB172C40A58C007E7FE3 /* CursoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB162C40A58C007E7FE3 /* CursoiOSApp.swift */; };
 		0B92BB192C40A58C007E7FE3 /* Exercise1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB182C40A58C007E7FE3 /* Exercise1.swift */; };
 		0B92BB1B2C40A58E007E7FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B92BB1A2C40A58E007E7FE3 /* Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		0B8BC1B32C45F5390072C762 /* LabelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExample.swift; sourceTree = "<group>"; };
 		0B8BC1B52C45F7AA0072C762 /* ButtonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExample.swift; sourceTree = "<group>"; };
 		0B8BC1B72C45FB740072C762 /* TextFieldExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExample.swift; sourceTree = "<group>"; };
+		0B91B1282C50671A00786CE0 /* FavPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavPlaces.swift; sourceTree = "<group>"; };
+		0B91B12B2C507A8100786CE0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		0B91B12D2C507F3E00786CE0 /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
 		0B92BB132C40A58C007E7FE3 /* CursoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B92BB162C40A58C007E7FE3 /* CursoiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoiOSApp.swift; sourceTree = "<group>"; };
 		0B92BB182C40A58C007E7FE3 /* Exercise1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1.swift; sourceTree = "<group>"; };
@@ -115,6 +121,23 @@
 			path = SuperHero;
 			sourceTree = "<group>";
 		};
+		0B91B1272C5066E300786CE0 /* FavPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				0B91B12A2C507A5D00786CE0 /* model */,
+				0B91B1282C50671A00786CE0 /* FavPlaces.swift */,
+			);
+			path = FavPlaces;
+			sourceTree = "<group>";
+		};
+		0B91B12A2C507A5D00786CE0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0B91B12B2C507A8100786CE0 /* Place.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		0B92BB0A2C40A58C007E7FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +161,7 @@
 		0B92BB152C40A58C007E7FE3 /* CursoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				0B91B1272C5066E300786CE0 /* FavPlaces */,
 				0B354D922C48A2650092A865 /* SuperHero */,
 				0BAA9BA92C470579004E71F3 /* IMC */,
 				0BA9D8BD2C41FB6E00061259 /* Components */,
@@ -194,6 +218,7 @@
 				0B8BC1B72C45FB740072C762 /* TextFieldExample.swift */,
 				0B354D902C488D4F0092A865 /* ListExample.swift */,
 				0BAF8D252C4ED55C002B97CC /* MapExample.swift */,
+				0B91B12D2C507F3E00786CE0 /* CustomDialog.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -350,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B92BB192C40A58C007E7FE3 /* Exercise1.swift in Sources */,
+				0B91B1292C50671A00786CE0 /* FavPlaces.swift in Sources */,
 				0B8BC1B62C45F7AA0072C762 /* ButtonExample.swift in Sources */,
 				0B8BC1B42C45F5390072C762 /* LabelExample.swift in Sources */,
 				0BAD498F2C45A9E400B5B1B6 /* TextExample.swift in Sources */,
@@ -363,8 +389,10 @@
 				0B8BC1B82C45FB740072C762 /* TextFieldExample.swift in Sources */,
 				0BA5A2102C4B01F400E5218B /* SuperheroDetail.swift in Sources */,
 				0BAA9BAB2C470596004E71F3 /* IMCView.swift in Sources */,
+				0B91B12C2C507A8100786CE0 /* Place.swift in Sources */,
 				0B92BB172C40A58C007E7FE3 /* CursoiOSApp.swift in Sources */,
 				0B9E60702C49929E003A652D /* ApiNetwork.swift in Sources */,
+				0B91B12E2C507F3E00786CE0 /* CustomDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
