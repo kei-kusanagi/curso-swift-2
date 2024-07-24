@@ -19,12 +19,12 @@ struct FavPlaces: View {
     )
     
     @State var places:[Place] = []
-    
-//    @State var showPopUp:Bool = false
     @State var showPopUp:CLLocationCoordinate2D? = nil
-    
+    @State var showSheet:Bool = false
     @State var name:String = ""
     @State var fav:Bool = false
+    
+    let heigt = stride(from: 0.3, through: 0.3, by: 0.1).map{PresentationDetent.fraction($0)}
     
     var body: some View {
         ZStack{
@@ -44,6 +44,19 @@ struct FavPlaces: View {
                     .onTapGesture { coord in
                         if let coordinates = proxy.convert(coord, from: .local){
                             showPopUp = coordinates
+                        }
+                    }
+                    .overlay{
+                        VStack{
+                            Button("Show list"){
+                                showSheet = true
+                            }
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 8)
+                            .background(.white)
+                            .cornerRadius(16)
+                            .padding(16)
+                            Spacer()
                         }
                     }
             }
@@ -68,8 +81,12 @@ struct FavPlaces: View {
                     }, onDismissOutside: true, content: view)
                 }
             }
-            
+        }.sheet(isPresented: $showSheet){
+            ZStack{
+                Text("Soy una lista")
+            }.presentationDetents(Set(heigt))
         }
+      
     }
     
     func savePlace(name:String, fav:Bool, coordinates:CLLocationCoordinate2D){
