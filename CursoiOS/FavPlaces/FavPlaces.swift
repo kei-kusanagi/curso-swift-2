@@ -26,6 +26,8 @@ struct FavPlaces: View {
     
     let heigt = stride(from: 0.3, through: 0.3, by: 0.1).map { PresentationDetent.fraction($0) }
     
+    let heigt = stride(from: 0.3, through: 0.3, by: 0.1).map{PresentationDetent.fraction($0)}
+    
     var body: some View {
         ZStack {
             MapReader { proxy in
@@ -102,6 +104,7 @@ struct FavPlaces: View {
             }
             .presentationDetents(Set(heigt))
         }
+      
     }
     
     func animateCamera(cordinates: CLLocationCoordinate2D) {
